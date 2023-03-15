@@ -1,0 +1,18 @@
+import java.time.LocalDateTime; 
+java.time.format.DateTimeFormatter; 
+
+ public class sampleDateFormate { 
+
+public static void main(String[] args) {
+
+ LocalDateTime date = LocalDateTime.now();
+
+ System.out.println(date); 
+
+DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+
+ System.out.println(dtf.format(date));
+
+ }
+
+ }
