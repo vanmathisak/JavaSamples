@@ -1,0 +1,21 @@
+package com.java;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class RemoveDplicateEle {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> numbers= new ArrayList<>(Arrays.asList(5,4,10,20,4,6,10,39,4,39));
+		System.out.println("Array with duplicate elements:"+ numbers);
+		Set<Integer> s= new LinkedHashSet<>();
+		s.addAll(numbers);
+		
+		numbers.clear();
+		numbers.addAll(s);
+		System.out.println("Array without duplicte elements:" + numbers);
+
+	}
+
+}
